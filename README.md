@@ -9,7 +9,7 @@
 | [ts-kicad-lib](#ts-kicad-lib) | Collection of general components used in most projects. |
 | [ts-keyboard-lib](#ts-keyboard-lib) | Collection of custom keyboard specific components. |
 
-A variety of [3D Models](#3d_models), as `STEP` files.
+A variety of [3D Models](#3d-models), as `STEP` files.
 
 ---
 
