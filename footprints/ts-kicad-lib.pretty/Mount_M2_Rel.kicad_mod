@@ -54,9 +54,9 @@
 	(attr exclude_from_pos_files exclude_from_bom)
 	(fp_circle
 		(center 0 0)
-		(end 2.2 0)
+		(end 2 0)
 		(stroke
-			(width 0.15)
+			(width 0.01)
 			(type solid)
 		)
 		(fill no)
