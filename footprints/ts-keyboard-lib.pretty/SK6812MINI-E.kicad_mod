@@ -353,4 +353,15 @@
 		(uuid "eafa2ca0-9afd-4246-af81-aabbd2e06a84")
 	)
 	(embedded_fonts no)
+	(model "${ACME}/SK6812MINI-E.step"
+		(offset
+			(xyz 0 -5.1 -1.7)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz -0 -180 180)
+		)
+	)
 )
