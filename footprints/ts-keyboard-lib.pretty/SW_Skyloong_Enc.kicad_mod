@@ -142,17 +142,17 @@
 		(layers "B.Cu" "B.Mask")
 		(uuid "b9a58432-9b80-497b-b7e4-072f7043c6dd")
 	)
+	(pad "C" smd circle
+		(at 3.5 4)
+		(size 1.75 1.75)
+		(layers "B.Cu" "B.Mask")
+		(uuid "68b8009b-df81-40aa-a84f-4f0d515ed358")
+	)
 	(pad "E" smd circle
 		(at 3.5 1.5)
 		(size 1.75 1.75)
 		(layers "B.Cu" "B.Mask")
 		(uuid "3c527a48-4e49-42a0-95ab-c531b0406516")
-	)
-	(pad "G" smd circle
-		(at 3.5 4)
-		(size 1.75 1.75)
-		(layers "B.Cu" "B.Mask")
-		(uuid "68b8009b-df81-40aa-a84f-4f0d515ed358")
 	)
 	(embedded_fonts no)
 )

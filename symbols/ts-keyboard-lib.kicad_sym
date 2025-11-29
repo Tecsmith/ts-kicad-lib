@@ -2,6 +2,270 @@
 	(version 20241209)
 	(generator "kicad_symbol_editor")
 	(generator_version "9.0")
+	(symbol "CONN_UDB"
+		(pin_names
+			(offset 0.762)
+		)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(property "Reference" "J"
+			(at 0 7.62 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "UDB"
+			(at 5.08 0 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Connector_JST:JST_SH_SM04B-SRSS-TB_1x04-1MP_P1.00mm_Horizontal"
+			(at 0 12.7 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://unified-daughterboard.github.io"
+			(at 0 10.16 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Unified Daughterboard C Series"
+			(at 0 15.24 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_keywords" "udb jst connector 04"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(symbol "CONN_UDB_1_1"
+			(rectangle
+				(start -1.27 6.35)
+				(end 3.81 -3.81)
+				(stroke
+					(width 0.254)
+					(type default)
+				)
+				(fill
+					(type background)
+				)
+			)
+			(rectangle
+				(start -1.27 5.207)
+				(end -0.254 4.953)
+				(stroke
+					(width 0.1524)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(rectangle
+				(start -1.27 2.667)
+				(end -0.254 2.413)
+				(stroke
+					(width 0.1524)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(rectangle
+				(start -1.27 0.127)
+				(end -0.254 -0.127)
+				(stroke
+					(width 0.1524)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(rectangle
+				(start -1.27 -2.413)
+				(end -0.254 -2.667)
+				(stroke
+					(width 0.1524)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy -1.016 -4.572) (xy 1.016 -4.572)
+				)
+				(stroke
+					(width 0.1524)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(text "Mounting"
+				(at 0 -4.191 0)
+				(effects
+					(font
+						(size 0.381 0.381)
+					)
+				)
+			)
+			(text "VCC"
+				(at 1.27 5.08 0)
+				(effects
+					(font
+						(size 0.762 0.762)
+					)
+					(justify left)
+				)
+			)
+			(text "D-"
+				(at 1.27 2.54 0)
+				(effects
+					(font
+						(size 0.762 0.762)
+					)
+					(justify left)
+				)
+			)
+			(text "D+"
+				(at 1.27 0 0)
+				(effects
+					(font
+						(size 0.762 0.762)
+					)
+					(justify left)
+				)
+			)
+			(text "GND"
+				(at 1.27 -2.54 0)
+				(effects
+					(font
+						(size 0.762 0.762)
+					)
+					(justify left)
+				)
+			)
+			(pin passive line
+				(at -2.54 5.08 0)
+				(length 1.27)
+				(name "1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at -2.54 2.54 0)
+				(length 1.27)
+				(name "2"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "2"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at -2.54 0 0)
+				(length 1.27)
+				(name "3"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "3"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at -2.54 -2.54 0)
+				(length 1.27)
+				(name "4"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "4"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 0 -5.08 90)
+				(length 0.508)
+				(name ""
+					(effects
+						(font
+							(size 0.254 0.254)
+						)
+					)
+				)
+				(number "MP"
+					(effects
+						(font
+							(size 0.254 0.254)
+						)
+					)
+				)
+			)
+		)
+		(embedded_fonts no)
+	)
 	(symbol "Momentary_Switch"
 		(pin_numbers
 			(hide yes)
@@ -1116,6 +1380,216 @@
 		)
 		(embedded_fonts no)
 	)
+	(symbol "SW_SPDT"
+		(pin_names
+			(offset 0)
+			(hide yes)
+		)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(property "Reference" "SW"
+			(at 0 3.81 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "~"
+			(at 0 -5.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Button_Switch_SMD:SW_SPDT_Shouhan_MSK12C02"
+			(at 0 8.89 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.lcsc.com/datasheet/C431540.pdf"
+			(at 0 6.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Switch, single pole double throw"
+			(at 0 11.43 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C431540"
+			(at 0 -7.62 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_keywords" "switch single-pole double-throw spdt ON-ON"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(symbol "SW_SPDT_0_1"
+			(polyline
+				(pts
+					(xy -1.27 0) (xy -0.508 0) (xy -0.508 -0.762)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(circle
+				(center -0.508 -1.27)
+				(radius 0.508)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 0 -1.27) (xy 2.032 -2.286)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(circle
+				(center 2.54 0)
+				(radius 0.508)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(circle
+				(center 2.54 -2.54)
+				(radius 0.508)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 3.81 0) (xy 3.048 0)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 3.81 -2.54) (xy 3.048 -2.54)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+		)
+		(symbol "SW_SPDT_1_1"
+			(pin passive line
+				(at -2.54 0 0)
+				(length 1.27)
+				(name "B"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "2"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 5.08 0 180)
+				(length 1.27)
+				(name "A"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 5.08 -2.54 180)
+				(length 1.27)
+				(name "C"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "3"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+		)
+		(embedded_fonts no)
+	)
 	(symbol "SW_Skyloong_Enc"
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -1128,8 +1602,8 @@
 				)
 			)
 		)
-		(property "Value" ""
-			(at 0 0 0)
+		(property "Value" "~"
+			(at 0 7.62 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1145,8 +1619,8 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" ""
-			(at 0 0 0)
+		(property "Datasheet" "https://github.com/JZ-Skyloong/Skyloong_Components/blob/main/encoder_key_switch/encoder_key_switch_V2_02122025.pdf"
+			(at 0 -7.62 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1154,8 +1628,8 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
-			(at 0 0 0)
+		(property "Description" "jikedingzhi.com Encoder Key Switch"
+			(at 0 10.16 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1373,14 +1847,14 @@
 			(pin passive line
 				(at -5.08 0 0)
 				(length 1.27)
-				(name "G"
+				(name "C"
 					(effects
 						(font
 							(size 1.27 1.27)
 						)
 					)
 				)
-				(number "G"
+				(number "C"
 					(effects
 						(font
 							(size 1.27 1.27)

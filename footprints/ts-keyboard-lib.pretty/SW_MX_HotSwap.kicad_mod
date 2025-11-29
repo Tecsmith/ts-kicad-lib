@@ -571,14 +571,14 @@
 		(at -5.08 0)
 		(size 0.01 0.01)
 		(drill 1.7)
-		(layers "F&B.Cu" "*.Mask")
+		(layers "*.Cu" "*.Mask")
 		(uuid "cfba8484-f2ba-4a18-8fda-251c86a0263d")
 	)
 	(pad "" np_thru_hole circle
 		(at 0 0)
 		(size 0.01 0.01)
 		(drill 4)
-		(layers "F&B.Cu" "*.Mask")
+		(layers "*.Cu" "*.Mask")
 		(thermal_bridge_angle 90)
 		(uuid "0d20efc5-5d03-4ca2-8111-a8a527bc809c")
 	)
@@ -586,7 +586,7 @@
 		(at 5.08 0)
 		(size 0.01 0.01)
 		(drill 1.7)
-		(layers "F&B.Cu" "*.Mask")
+		(layers "*.Cu" "*.Mask")
 		(uuid "51856057-5bb0-4a32-b1f8-b60bcc237fae")
 	)
 	(pad "1" smd roundrect
@@ -621,7 +621,7 @@
 		(uuid "86cb8a60-6fab-4d2e-b8d3-d14d3d9a0636")
 	)
 	(embedded_fonts no)
-	(model "${ACME}/Kailh Hotswap MX v22.step"
+	(model "${ACME}/Kailh-Hotswap-MX-v22.step"
 		(offset
 			(xyz 0.6 4.75 1.6)
 		)
