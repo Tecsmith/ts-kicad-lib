@@ -25,7 +25,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Connector_JST:JST_SH_SM04B-SRSS-TB_1x04-1MP_P1.00mm_Horizontal"
+		(property "Footprint" "ts-keyboard-lib:JST_SH_SM04B-SRSS-TB_1x04-1MP_P1.00mm_Horizontal"
 			(at 0 12.7 0)
 			(effects
 				(font
@@ -1075,16 +1075,16 @@
 				)
 			)
 		)
-		(property "Value" ""
-			(at 0 0 0)
+		(property "Value" "EC11"
+			(at 0 -1.27 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Footprint" "ts-keyboard-lib:SW_Skyloong_Enc"
-			(at 0 -5.08 0)
+		(property "Footprint" "ts-keyboard-lib:EC11-E"
+			(at 0 7.62 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1342,19 +1342,37 @@
 				)
 			)
 			(pin passive line
+				(at 0 -5.08 90)
+				(length 1.27)
+				(name "MP"
+					(effects
+						(font
+							(size 0 0)
+						)
+					)
+				)
+				(number "MP"
+					(effects
+						(font
+							(size 0.635 0.635)
+						)
+					)
+				)
+			)
+			(pin passive line
 				(at 5.08 2.54 180)
 				(length 1.27)
-				(name "1"
+				(name "D"
 					(effects
 						(font
 							(size 1.27 1.27)
 						)
 					)
 				)
-				(number "1"
+				(number "D"
 					(effects
 						(font
-							(size 1.27 1.27)
+							(size 0.635 0.635)
 						)
 					)
 				)
@@ -1362,17 +1380,17 @@
 			(pin passive line
 				(at 5.08 -2.54 180)
 				(length 1.27)
-				(name "2"
+				(name "E"
 					(effects
 						(font
 							(size 1.27 1.27)
 						)
 					)
 				)
-				(number "2"
+				(number "E"
 					(effects
 						(font
-							(size 1.27 1.27)
+							(size 0.635 0.635)
 						)
 					)
 				)

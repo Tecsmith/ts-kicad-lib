@@ -2498,7 +2498,7 @@
 			(pin passive line
 				(at -20.32 -5.08 0)
 				(length 2.54)
-				(name "GPIO9/D5/SCL"
+				(name "GPIO6/D5/SCL"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -3032,7 +3032,7 @@
 			(pin passive line
 				(at -20.32 -5.08 0)
 				(length 2.54)
-				(name "GPIO9/D5/SCL"
+				(name "GPIO6/D5/SCL"
 					(effects
 						(font
 							(size 1.27 1.27)

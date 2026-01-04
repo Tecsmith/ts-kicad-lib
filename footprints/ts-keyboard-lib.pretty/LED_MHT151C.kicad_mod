@@ -1,0 +1,152 @@
+(footprint "LED_MHT151C"
+	(version 20241229)
+	(generator "pcbnew")
+	(generator_version "9.0")
+	(layer "F.Cu")
+	(property "Reference" "REF**"
+		(at 0 -2 0)
+		(unlocked yes)
+		(layer "F.SilkS")
+		(uuid "6d7b1679-1e65-4e9b-8cd4-55c9c9d7cb9a")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.1)
+			)
+		)
+	)
+	(property "Value" "LED_MHT151C"
+		(at 0 2 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(uuid "54eabe97-9693-4ef7-b4f2-1a9281a928df")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "1758992e-d27d-404e-ab12-3739439dcf94")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "c683dc64-087f-4099-bf4a-7d6506f01241")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(attr through_hole)
+	(fp_line
+		(start -2.553943 0.495708)
+		(end -2.553943 -0.504292)
+		(stroke
+			(width 0.4)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "1178ee1e-d31c-4e8e-af65-f22318e01938")
+	)
+	(fp_poly
+		(pts
+			(xy 2.354205 0.001481) (xy 3.000787 -0.622805) (xy 3.000787 0.628952)
+		)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(fill yes)
+		(layer "F.SilkS")
+		(uuid "e26cf2dc-eaa6-4525-809e-219d30d31012")
+	)
+	(fp_circle
+		(center 0 0)
+		(end 0.639965 -0.895048)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(fill no)
+		(layer "Margin")
+		(uuid "280a7ebf-503f-4dc9-abe3-871a021d64a9")
+	)
+	(fp_rect
+		(start -1.6 -0.625)
+		(end 1.6 0.625)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(fill no)
+		(layer "F.CrtYd")
+		(uuid "d1b0c936-377b-4028-b1ac-980d5147bdd2")
+	)
+	(fp_text user "${REFERENCE}"
+		(at 0 4 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(uuid "1bf4e786-85b0-4e66-9f7e-8d880f5aa372")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(pad "" np_thru_hole custom
+		(at 0 0)
+		(size 2.1 2.1)
+		(drill 2.1)
+		(layers "*.Mask")
+		(thermal_bridge_angle 90)
+		(options
+			(clearance outline)
+			(anchor circle)
+		)
+		(primitives)
+		(uuid "81693ea1-c1a6-4e14-95f5-4dcb3d347608")
+	)
+	(pad "1" smd roundrect
+		(at 1.72565 0)
+		(size 1.1513 1.25)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(roundrect_rratio 0.07874015748)
+		(uuid "9107b280-a6bf-4c72-82bd-6a1ec497fded")
+	)
+	(pad "2" smd roundrect
+		(at -1.72565 0)
+		(size 1.1513 1.25)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(roundrect_rratio 0.07874015748)
+		(uuid "61828e8a-b000-47bc-97c0-9ea8b3473607")
+	)
+	(embedded_fonts no)
+	(model "${TECSMITH_3DMODEL_DIR}/156120M.step"
+		(offset
+			(xyz 0 0 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz 180 -0 -0)
+		)
+	)
+)
