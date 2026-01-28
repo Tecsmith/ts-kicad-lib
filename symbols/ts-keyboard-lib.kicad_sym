@@ -266,6 +266,520 @@
 		)
 		(embedded_fonts no)
 	)
+	(symbol "Comm_Anode_1BRG"
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(property "Reference" "W"
+			(at 0 5.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" ""
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "ts-keyboard-lib:RGB-156120M"
+			(at 0 -6.604 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://github.com/Tecsmith/ts-kicad-lib/blob/main/docs/156120M173000-C5156309.pdf"
+			(at 0 -8.636 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(symbol "Comm_Anode_1BRG_1_1"
+			(rectangle
+				(start -3.81 3.81)
+				(end 3.81 -3.81)
+				(stroke
+					(width 0)
+					(type solid)
+				)
+				(fill
+					(type background)
+				)
+			)
+			(polyline
+				(pts
+					(xy -3.1092 -1.9342) (xy -3.1092 -2.1882) (xy -2.8552 -2.1882)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy -3.1092 -2.4422) (xy -3.1092 -2.6962) (xy -2.8552 -2.6962)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy -3.1092 -2.6962) (xy -2.6012 -2.1882)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy -2.6012 -1.6802) (xy -3.1092 -2.1882)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy -1.8392 -1.6802) (xy -1.8392 -1.1722)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy -1.8392 -2.6962) (xy -1.3312 -2.6962)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy -1.8392 -2.6962) (xy -2.3472 -1.6802) (xy -1.3312 -1.6802) (xy -1.8392 -2.6962)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy -1.8392 -3.2042) (xy -1.8392 -2.6962) (xy -2.3472 -2.6962)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(text "+BRG"
+				(at -3.3532 -3.0711 0)
+				(effects
+					(font
+						(size 0.3048 0.3048)
+					)
+					(justify left)
+				)
+			)
+			(text "RGB"
+				(at -3.302 1.016 0)
+				(effects
+					(font
+						(size 0.6096 0.6096)
+					)
+					(justify left)
+				)
+			)
+			(text "Com-A"
+				(at -3.302 0 0)
+				(effects
+					(font
+						(size 0.6096 0.6096)
+					)
+					(justify left)
+				)
+			)
+			(pin power_in line
+				(at -5.08 2.54 0)
+				(length 1.27)
+				(name "+"
+					(effects
+						(font
+							(size 1.016 1.016)
+						)
+					)
+				)
+				(number "1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 5.08 2.54 180)
+				(length 1.27)
+				(name "B"
+					(effects
+						(font
+							(size 1.016 1.016)
+						)
+					)
+				)
+				(number "2"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 5.08 0 180)
+				(length 1.27)
+				(name "R"
+					(effects
+						(font
+							(size 1.016 1.016)
+						)
+					)
+				)
+				(number "3"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 5.08 -2.54 180)
+				(length 1.27)
+				(name "G"
+					(effects
+						(font
+							(size 1.016 1.016)
+						)
+					)
+				)
+				(number "4"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+		)
+		(embedded_fonts no)
+	)
+	(symbol "Comm_Anode_RGB4"
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(property "Reference" "W"
+			(at 0 5.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" ""
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "ts-keyboard-lib:RGB-3528"
+			(at 0 -6.604 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://github.com/Tecsmith/ts-kicad-lib/blob/main/docs/RGB3528-4P-C183826.pdf.pdf"
+			(at 0 -8.636 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "EVERLIGHT 67-23-RSHGRBYC-M050505-ET1-CS Common Anode RGB LED"
+			(at 0.254 -4.826 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(symbol "Comm_Anode_RGB4_1_1"
+			(rectangle
+				(start -3.81 3.81)
+				(end 3.81 -3.81)
+				(stroke
+					(width 0)
+					(type solid)
+				)
+				(fill
+					(type background)
+				)
+			)
+			(polyline
+				(pts
+					(xy -3.1092 -1.9342) (xy -3.1092 -2.1882) (xy -2.8552 -2.1882)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy -3.1092 -2.4422) (xy -3.1092 -2.6962) (xy -2.8552 -2.6962)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy -3.1092 -2.6962) (xy -2.6012 -2.1882)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy -2.6012 -1.6802) (xy -3.1092 -2.1882)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy -1.8392 -1.6802) (xy -1.8392 -1.1722)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy -1.8392 -2.6962) (xy -1.3312 -2.6962)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy -1.8392 -2.6962) (xy -2.3472 -1.6802) (xy -1.3312 -1.6802) (xy -1.8392 -2.6962)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy -1.8392 -3.2042) (xy -1.8392 -2.6962) (xy -2.3472 -2.6962)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(text "RGB+"
+				(at -3.3532 -3.0711 0)
+				(effects
+					(font
+						(size 0.3048 0.3048)
+					)
+					(justify left)
+				)
+			)
+			(text "RGB"
+				(at -3.302 1.016 0)
+				(effects
+					(font
+						(size 0.6096 0.6096)
+					)
+					(justify left)
+				)
+			)
+			(text "Com-A"
+				(at -3.302 0 0)
+				(effects
+					(font
+						(size 0.6096 0.6096)
+					)
+					(justify left)
+				)
+			)
+			(pin power_in line
+				(at -5.08 2.54 0)
+				(length 1.27)
+				(name "+"
+					(effects
+						(font
+							(size 1.016 1.016)
+						)
+					)
+				)
+				(number "4"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 5.08 2.54 180)
+				(length 1.27)
+				(name "R"
+					(effects
+						(font
+							(size 1.016 1.016)
+						)
+					)
+				)
+				(number "1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 5.08 0 180)
+				(length 1.27)
+				(name "G"
+					(effects
+						(font
+							(size 1.016 1.016)
+						)
+					)
+				)
+				(number "2"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 5.08 -2.54 180)
+				(length 1.27)
+				(name "B"
+					(effects
+						(font
+							(size 1.016 1.016)
+						)
+					)
+				)
+				(number "3"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+		)
+		(embedded_fonts no)
+	)
 	(symbol "Momentary_Switch"
 		(pin_numbers
 			(hide yes)
@@ -470,263 +984,6 @@
 					)
 				)
 				(number "2"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-		)
-		(embedded_fonts no)
-	)
-	(symbol "RGB_Comm_Anode"
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(property "Reference" "W"
-			(at 0 5.08 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" ""
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "ts-keyboard-lib:RGB-156120M"
-			(at 0 -6.604 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://github.com/Tecsmith/ts-kicad-lib/blob/main/docs/156120M173000-C5156309.pdf"
-			(at 0 -8.636 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(symbol "RGB_Comm_Anode_1_1"
-			(rectangle
-				(start -3.81 3.81)
-				(end 3.81 -3.81)
-				(stroke
-					(width 0)
-					(type solid)
-				)
-				(fill
-					(type background)
-				)
-			)
-			(polyline
-				(pts
-					(xy -3.1092 -1.9342) (xy -3.1092 -2.1882) (xy -2.8552 -2.1882)
-				)
-				(stroke
-					(width 0)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
-			)
-			(polyline
-				(pts
-					(xy -3.1092 -2.4422) (xy -3.1092 -2.6962) (xy -2.8552 -2.6962)
-				)
-				(stroke
-					(width 0)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
-			)
-			(polyline
-				(pts
-					(xy -3.1092 -2.6962) (xy -2.6012 -2.1882)
-				)
-				(stroke
-					(width 0)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
-			)
-			(polyline
-				(pts
-					(xy -2.6012 -1.6802) (xy -3.1092 -2.1882)
-				)
-				(stroke
-					(width 0)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
-			)
-			(polyline
-				(pts
-					(xy -1.8392 -1.6802) (xy -1.8392 -1.1722)
-				)
-				(stroke
-					(width 0)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
-			)
-			(polyline
-				(pts
-					(xy -1.8392 -2.6962) (xy -1.3312 -2.6962)
-				)
-				(stroke
-					(width 0)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
-			)
-			(polyline
-				(pts
-					(xy -1.8392 -2.6962) (xy -2.3472 -1.6802) (xy -1.3312 -1.6802) (xy -1.8392 -2.6962)
-				)
-				(stroke
-					(width 0)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
-			)
-			(polyline
-				(pts
-					(xy -1.8392 -3.2042) (xy -1.8392 -2.6962) (xy -2.3472 -2.6962)
-				)
-				(stroke
-					(width 0)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
-			)
-			(text "+BRG"
-				(at -3.3532 -3.0711 0)
-				(effects
-					(font
-						(size 0.3048 0.3048)
-					)
-					(justify left)
-				)
-			)
-			(text "RGB"
-				(at -3.302 1.016 0)
-				(effects
-					(font
-						(size 0.6096 0.6096)
-					)
-					(justify left)
-				)
-			)
-			(text "Com-A"
-				(at -3.302 0 0)
-				(effects
-					(font
-						(size 0.6096 0.6096)
-					)
-					(justify left)
-				)
-			)
-			(pin power_in line
-				(at -5.08 2.54 0)
-				(length 1.27)
-				(name "+"
-					(effects
-						(font
-							(size 1.016 1.016)
-						)
-					)
-				)
-				(number "1"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin passive line
-				(at 5.08 2.54 180)
-				(length 1.27)
-				(name "B"
-					(effects
-						(font
-							(size 1.016 1.016)
-						)
-					)
-				)
-				(number "2"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin passive line
-				(at 5.08 0 180)
-				(length 1.27)
-				(name "R"
-					(effects
-						(font
-							(size 1.016 1.016)
-						)
-					)
-				)
-				(number "3"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin passive line
-				(at 5.08 -2.54 180)
-				(length 1.27)
-				(name "G"
-					(effects
-						(font
-							(size 1.016 1.016)
-						)
-					)
-				)
-				(number "4"
 					(effects
 						(font
 							(size 1.27 1.27)
