@@ -621,7 +621,7 @@
 		(uuid "86cb8a60-6fab-4d2e-b8d3-d14d3d9a0636")
 	)
 	(embedded_fonts no)
-	(model "${ACME}/Kailh-Hotswap-MX-v22.step"
+	(model "${TECSMITH_3DMODEL_DIR}/Kailh-Hotswap-MX-v22.step"
 		(offset
 			(xyz 0.6 4.75 1.6)
 		)

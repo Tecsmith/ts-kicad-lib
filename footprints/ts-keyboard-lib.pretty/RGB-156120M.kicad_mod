@@ -236,7 +236,7 @@
 		(uuid "eafa2ca0-9afd-4246-af81-aabbd2e06a84")
 	)
 	(embedded_fonts no)
-	(model "${ACME}/156120M.step"
+	(model "${TECSMITH_3DMODEL_DIR}/156120M.step"
 		(offset
 			(xyz 0 0 0)
 		)

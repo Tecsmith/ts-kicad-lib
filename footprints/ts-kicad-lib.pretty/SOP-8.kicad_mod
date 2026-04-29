@@ -689,7 +689,7 @@
 		(uuid "d173dff0-a5eb-4392-9753-fc2d4ec6cef7")
 	)
 	(embedded_fonts no)
-	(model "${ACME}/SOP-8_6X5P05_FUJ.step"
+	(model "${TECSMITH_3DMODEL_DIR}/SOP-8_6X5P05_FUJ.step"
 		(offset
 			(xyz 0 0 0)
 		)
