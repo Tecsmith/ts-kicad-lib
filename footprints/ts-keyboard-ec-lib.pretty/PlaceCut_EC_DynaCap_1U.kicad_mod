@@ -1,0 +1,353 @@
+(footprint "PlaceCut_EC_DynaCap_1U"
+	(version 20260206)
+	(generator "pcbnew")
+	(generator_version "10.0")
+	(layer "F.Cu")
+	(descr " StepUp generated footprint")
+	(property "Reference" "${REFERENCE}"
+		(at -7 -8 0)
+		(layer "Dwgs.User")
+		(uuid "fbfa4b4a-d41e-4463-a377-156539043229")
+		(effects
+			(font
+				(size 0.8 0.8)
+				(thickness 0.12)
+			)
+			(justify left)
+		)
+	)
+	(property "Value" "Value "
+		(at -4.9 -5.6 0)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "9880f5a6-7d8f-41c7-bae3-cc5261ecbd6b")
+		(effects
+			(font
+				(size 0.8 0.8)
+				(thickness 0.12)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "d8fff88d-fd36-410c-a9a0-32705bf84720")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "27d11fb1-1c06-4081-a5b8-13be3d033441")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(attr smd)
+	(duplicate_pad_numbers_are_jumpers no)
+	(fp_line
+		(start -10.025 0.5)
+		(end -9.025 -0.5)
+		(stroke
+			(width 0.005)
+			(type dash_dot_dot)
+		)
+		(layer "Cmts.User")
+		(uuid "ecef5c02-6aaa-4049-99d6-c84e93168172")
+	)
+	(fp_line
+		(start -9.525 1)
+		(end -9.525 -1)
+		(stroke
+			(width 0.005)
+			(type dash)
+		)
+		(layer "Cmts.User")
+		(uuid "bc85f2c0-8b62-486a-bb4a-c2fb0c351b6d")
+	)
+	(fp_line
+		(start -9.025 0.5)
+		(end -10.025 -0.5)
+		(stroke
+			(width 0.005)
+			(type dash_dot_dot)
+		)
+		(layer "Cmts.User")
+		(uuid "88924a0d-6988-47ee-b350-b3e64dd50b7d")
+	)
+	(fp_line
+		(start -8.525 0)
+		(end -10.525 0)
+		(stroke
+			(width 0.005)
+			(type dash)
+		)
+		(layer "Cmts.User")
+		(uuid "95ab2170-eb68-427c-b951-4c2046cb91c9")
+	)
+	(fp_line
+		(start 8.525 0)
+		(end 10.525 0)
+		(stroke
+			(width 0.005)
+			(type dash)
+		)
+		(layer "Cmts.User")
+		(uuid "0e6ecf01-dcae-4e0d-8bf3-680bbbada3d9")
+	)
+	(fp_line
+		(start 9.025 -0.5)
+		(end 10.025 0.5)
+		(stroke
+			(width 0.005)
+			(type dash_dot_dot)
+		)
+		(layer "Cmts.User")
+		(uuid "823ab2f1-dc21-4244-b155-0c8766007893")
+	)
+	(fp_line
+		(start 9.525 -1)
+		(end 9.525 1)
+		(stroke
+			(width 0.005)
+			(type dash)
+		)
+		(layer "Cmts.User")
+		(uuid "28208415-aaf7-4753-9457-1ae4ed498627")
+	)
+	(fp_line
+		(start 10.025 -0.5)
+		(end 9.025 0.5)
+		(stroke
+			(width 0.005)
+			(type dash_dot_dot)
+		)
+		(layer "Cmts.User")
+		(uuid "d40f3112-020e-422f-a578-be6ab8521d06")
+	)
+	(fp_circle
+		(center -9.525 0)
+		(end -10.525 0)
+		(stroke
+			(width 0.005)
+			(type dot)
+		)
+		(fill no)
+		(layer "Cmts.User")
+		(uuid "0a20423f-e887-475e-8fbe-7c16b81f2c2b")
+	)
+	(fp_circle
+		(center 9.525 0)
+		(end 10.525 0)
+		(stroke
+			(width 0.005)
+			(type dot)
+		)
+		(fill no)
+		(layer "Cmts.User")
+		(uuid "888a1523-8509-4392-afb3-b11b7fdb9934")
+	)
+	(fp_line
+		(start -7.05 -5.350345)
+		(end -7.05 5.35)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "Edge.Cuts")
+		(uuid "e705bbb3-8440-4922-954c-a6471aa89a0b")
+	)
+	(fp_line
+		(start -5.050002 7.35)
+		(end 5.013983 7.349676)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "Edge.Cuts")
+		(uuid "04e0c499-98fb-4870-8488-768afc0258db")
+	)
+	(fp_line
+		(start 5.045076 -7.349994)
+		(end -5.05 -7.35)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "Edge.Cuts")
+		(uuid "70e1082d-0031-4170-b5c5-62c734bc89d2")
+	)
+	(fp_line
+		(start 7.05 5.35)
+		(end 7.05 -5.35)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "Edge.Cuts")
+		(uuid "f644e4d1-9efa-4bfb-8ae2-d46af85b2726")
+	)
+	(fp_arc
+		(start -7.05 -5.350345)
+		(mid -6.464092 -6.764336)
+		(end -5.05 -7.35)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "Edge.Cuts")
+		(uuid "7401b317-0937-4892-90f4-1b10653cb0b3")
+	)
+	(fp_arc
+		(start -5.050002 7.35)
+		(mid -6.464214 6.764213)
+		(end -7.05 5.35)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "Edge.Cuts")
+		(uuid "db4a52eb-9f4b-4dbe-9787-c4df04a9230f")
+	)
+	(fp_arc
+		(start 5.045076 -7.349994)
+		(mid 6.462472 -6.765953)
+		(end 7.05 -5.35)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "Edge.Cuts")
+		(uuid "eddfa4be-213a-4f43-8729-bb3ff32c34a3")
+	)
+	(fp_arc
+		(start 7.05 5.35)
+		(mid 6.451422 6.776891)
+		(end 5.013983 7.349676)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "Edge.Cuts")
+		(uuid "e60f3596-cf11-418b-9a0f-73c09f5075d8")
+	)
+	(dimension
+		(type orthogonal)
+		(layer "User.4")
+		(uuid "2cabb4f9-7a38-4ed2-b0b9-37a8f6ac2244")
+		(pts
+			(xy 5.05 7.35) (xy 5.05 -7.35)
+		)
+		(height 3.45)
+		(orientation 1)
+		(format
+			(prefix "")
+			(suffix "")
+			(units 3)
+			(units_format 1)
+			(precision 1)
+		)
+		(style
+			(thickness 0.05)
+			(arrow_length 0.25)
+			(text_position_mode 2)
+			(arrow_direction outward)
+			(extension_height 0.5)
+			(extension_offset 0.5)
+			(keep_text_aligned yes)
+		)
+		(gr_text "14.7 mm"
+			(at 7.982665 3.649295 90)
+			(layer "User.4")
+			(uuid "2cabb4f9-7a38-4ed2-b0b9-37a8f6ac2244")
+			(effects
+				(font
+					(size 0.5 0.5)
+					(thickness 0.05)
+				)
+			)
+		)
+	)
+	(dimension
+		(type orthogonal)
+		(layer "User.4")
+		(uuid "5b51fffe-adce-452b-8a6f-5cabf200f76f")
+		(pts
+			(xy 7.05 5.35) (xy 5.05 5.35)
+		)
+		(height -2.85)
+		(orientation 0)
+		(format
+			(prefix "")
+			(suffix "")
+			(units 3)
+			(units_format 1)
+			(precision 1)
+		)
+		(style
+			(thickness 0.05)
+			(arrow_length 0.25)
+			(text_position_mode 2)
+			(arrow_direction inward)
+			(extension_height 0.5)
+			(extension_offset 0.5)
+			(keep_text_aligned yes)
+		)
+		(gr_text "2.0 mm"
+			(at 2.75 2.5 0)
+			(layer "User.4")
+			(uuid "5b51fffe-adce-452b-8a6f-5cabf200f76f")
+			(effects
+				(font
+					(size 0.5 0.5)
+					(thickness 0.05)
+				)
+			)
+		)
+	)
+	(dimension
+		(type orthogonal)
+		(layer "User.4")
+		(uuid "90cceb66-0d13-462e-8b98-c49fd8083fa4")
+		(pts
+			(xy -7.032535 5.35852) (xy 7.05 5.35)
+		)
+		(height 3.14148)
+		(orientation 0)
+		(format
+			(prefix "")
+			(suffix "")
+			(units 3)
+			(units_format 1)
+			(precision 1)
+		)
+		(style
+			(thickness 0.05)
+			(arrow_length 0.25)
+			(text_position_mode 2)
+			(arrow_direction outward)
+			(extension_height 0.5)
+			(extension_offset 0.5)
+			(keep_text_aligned yes)
+		)
+		(gr_text "14.1 mm"
+			(at 4.34923 8 0)
+			(layer "User.4")
+			(uuid "90cceb66-0d13-462e-8b98-c49fd8083fa4")
+			(effects
+				(font
+					(size 0.5 0.5)
+					(thickness 0.05)
+				)
+			)
+		)
+	)
+	(embedded_fonts no)
+)
