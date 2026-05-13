@@ -1,0 +1,261 @@
+(footprint "ML414H_IV01E"
+	(version 20260206)
+	(generator "pcbnew")
+	(generator_version "10.0")
+	(layer "F.Cu")
+	(tags "SparkFun")
+	(property "Reference" "REF**"
+		(at -1.016 -2.921 0)
+		(layer "F.Fab")
+		(uuid "f68e5232-a3c1-4aaa-bbd1-f94d72262d96")
+		(effects
+			(font
+				(size 0.5 0.5)
+				(thickness 0.1)
+			)
+			(justify left bottom)
+		)
+	)
+	(property "Value" "ML414H_IV01E"
+		(at -1.016 3.302 0)
+		(layer "F.Fab")
+		(uuid "133e4f7e-c5f1-4441-975a-56eb5ddec272")
+		(effects
+			(font
+				(size 0.5 0.5)
+				(thickness 0.1)
+			)
+			(justify left bottom)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "e8ea2235-0d6e-4f8e-9040-b91aadbe1afa")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "c6eef706-8b6a-467d-ac36-4ec3e768f265")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(attr smd)
+	(duplicate_pad_numbers_are_jumpers no)
+	(fp_poly
+		(pts
+			(xy 2.705 -0.219645) (xy 0.219645 -2.705) (xy 2.705 -2.705)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(fill yes)
+		(layer "F.Mask")
+		(uuid "90551a30-72cc-41d1-9bb6-a448e89a15c6")
+	)
+	(fp_poly
+		(pts
+			(xy -1.5 2.7) (xy 2.7 2.7) (xy 2.7 1) (xy -1.5 1)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(fill yes)
+		(layer "F.Mask")
+		(uuid "7b946836-ff34-4605-b8dc-3554ffadbdd7")
+	)
+	(fp_arc
+		(start -1.752599 1.625602)
+		(mid -2.167967 -1.045069)
+		(end 0.1778 -2.3876)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "dfe70aeb-92ba-4a18-ac33-23ac97381603")
+	)
+	(fp_arc
+		(start 2.3876 -0.3302)
+		(mid 2.42159 0.252132)
+		(end 2.260599 0.8128)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "a5e76f11-3653-4fa2-bb44-2f1c829a9ab9")
+	)
+	(fp_poly
+		(pts
+			(xy 2.705 -0.219645) (xy 0.219645 -2.705) (xy 2.705 -2.705)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(fill yes)
+		(layer "F.Paste")
+		(uuid "3af5a94a-aecd-4294-9491-5c4b73ef248e")
+	)
+	(fp_poly
+		(pts
+			(xy -1.5 2.7) (xy 2.7 2.7) (xy 2.7 1) (xy -1.5 1)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(fill yes)
+		(layer "F.Paste")
+		(uuid "50b4b3b5-f24a-48a0-b8b8-b87593e3e5fa")
+	)
+	(fp_line
+		(start -1.649166 2.156773)
+		(end -1.651 2.794)
+		(stroke
+			(width 0.05)
+			(type default)
+		)
+		(layer "F.CrtYd")
+		(uuid "e41c5980-4a9b-451d-8375-7352845beec8")
+	)
+	(fp_line
+		(start 2.794 -2.794)
+		(end 0.127 -2.794)
+		(stroke
+			(width 0.05)
+			(type default)
+		)
+		(layer "F.CrtYd")
+		(uuid "68816adc-2214-4f06-b29b-98ba3d423b89")
+	)
+	(fp_line
+		(start 2.794 2.794)
+		(end -1.651 2.794)
+		(stroke
+			(width 0.05)
+			(type default)
+		)
+		(layer "F.CrtYd")
+		(uuid "7a6eeb71-94a5-4091-9a33-52ad20519a1a")
+	)
+	(fp_line
+		(start 2.794 2.794)
+		(end 2.794 -2.794)
+		(stroke
+			(width 0.05)
+			(type default)
+		)
+		(layer "F.CrtYd")
+		(uuid "ae342ee2-4ed4-4ca4-a93e-f0a135b66882")
+	)
+	(fp_arc
+		(start -1.649166 2.156773)
+		(mid -2.502873 -0.943507)
+		(end 0.127 -2.794)
+		(stroke
+			(width 0.05)
+			(type default)
+		)
+		(layer "F.CrtYd")
+		(uuid "5012915e-110c-4734-8af0-b332e2046803")
+	)
+	(fp_circle
+		(center 0 0)
+		(end 2.4 0)
+		(stroke
+			(width 0.0508)
+			(type solid)
+		)
+		(fill no)
+		(layer "F.Fab")
+		(uuid "98fd05e9-3ba9-4a58-bf9f-dc5a196de2cb")
+	)
+	(fp_poly
+		(pts
+			(xy 2.41 -0.775858) (xy 0.775858 -2.41) (xy 2.41 -2.41)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(fill yes)
+		(layer "F.Fab")
+		(uuid "3bd2d23f-e030-4283-b8a7-858da6f9c559")
+	)
+	(fp_poly
+		(pts
+			(xy 2.41 2.41) (xy -1.11 2.41) (xy -1.11 1) (xy 2.41 1)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(fill yes)
+		(layer "F.Fab")
+		(uuid "5728ecfe-7f98-491d-9d62-3892a9e1951e")
+	)
+	(pad "+" smd custom
+		(at 2.05 -2.1525)
+		(size 1.105 1.105)
+		(layers "F.Cu")
+		(thermal_bridge_angle 0)
+		(options
+			(clearance outline)
+			(anchor circle)
+		)
+		(primitives
+			(gr_poly
+				(pts
+					(xy -0.65 -0.5525) (xy 0.65 -0.5525) (xy 0.65 0.5525) (xy -0.65 0.5525)
+				)
+				(width 0)
+				(fill yes)
+			)
+			(gr_poly
+				(pts
+					(xy 0.655 1.932855) (xy -1.830355 -0.5525) (xy 0.655 -0.5525)
+				)
+				(width 0)
+				(fill yes)
+			)
+		)
+		(uuid "28ce6e6a-08ee-4696-bc52-cbacf2ccc38b")
+	)
+	(pad "-" smd rect
+		(at 0.6 1.85)
+		(size 4.2 1.7)
+		(layers "F.Cu")
+		(thermal_bridge_angle 0)
+		(uuid "db445945-3c26-44d0-909e-1df21769a9cb")
+	)
+	(embedded_fonts no)
+	(model "${KICAD9_3RD_PARTY}/3dmodels/com_github_sparkfun_SparkFun-KiCad-Libraries/Battery.3dshapes/XH414H-IV01E.step"
+		(offset
+			(xyz 0 0 0.3)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz 0 0 -90)
+		)
+	)
+)

@@ -5,29 +5,31 @@
     "description_full": "KiCAD symbols & footprints as used by Tecsmith projects.",
     "identifier": "com.github.tecsmith.ts-kicad-lib",
     "type": "library",
+    "license": "MIT",
+    "resources": {
+        "homepage": "https://github.com/Tecsmith/ts-kicad-lib"
+    },
     "author": {
         "name": "Tecsmith",
         "contact": {
-            "web": "https://github.com/Tecsmith"
+            "github": "https://github.com/Tecsmith"
         }
     },
     "maintainer": {
         "name": "Tecsmith",
         "contact": {
-            "web": "https://github.com/Tecsmith"
+            "github": "https://github.com/Tecsmith"
         }
     },
-    "license": "MIT",
-    "resources": {
-        "homepage": "https://github.com/Tecsmith/ts-kicad-lib"
-    },
-    "versions": [{
-        "version": "VERSION_HERE",
-        "status": "stable",
-        "kicad_version": "10.0",
-        "download_sha256": "SHA256_HERE",
-        "download_size": DOWNLOAD_SIZE_HERE,
-        "download_url": "DOWNLOAD_URL_HERE",
-        "install_size": INSTALL_SIZE_HERE
-    }]
+    "versions": [
+        {
+            "version": "VERSION_HERE",
+            "status": "stable",
+            "kicad_version": "10.0",
+            "download_sha256": "SHA256_HERE",
+            "download_size": DOWNLOAD_SIZE_HERE,
+            "download_url": "DOWNLOAD_URL_HERE",
+            "install_size": INSTALL_SIZE_HERE
+        }
+    ]
 }
