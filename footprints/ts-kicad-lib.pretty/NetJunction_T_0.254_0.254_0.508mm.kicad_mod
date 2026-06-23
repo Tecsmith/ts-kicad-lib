@@ -1,0 +1,106 @@
+(footprint "NetJunction_T_0.254_0.254_0.508mm"
+	(version 20260206)
+	(generator "pcbnew")
+	(generator_version "10.0")
+	(layer "F.Cu")
+	(property "Reference" "REF**"
+		(at 0 -2 0)
+		(unlocked yes)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "6a1dcb26-41c1-438f-b836-9b0e7da96d4a")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.1)
+			)
+		)
+	)
+	(property "Value" "NetJunction_T_0.254_0.254_0.508mm"
+		(at 0 6 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(uuid "2c99cdb7-4d41-47c1-9deb-2feb2e9ddaec")
+		(effects
+			(font
+				(size 1 1)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "2cbf0116-aabc-413b-ad26-c5a9099545a9")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "f0298f70-9bef-4568-9df0-88ed75651999")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(attr through_hole)
+	(duplicate_pad_numbers_are_jumpers yes)
+	(fp_poly
+		(pts
+			(xy 0.381 0.254) (xy 0.35882 0.254481) (xy 0.315134 0.262184) (xy 0.273449 0.277356) (xy 0.235032 0.299536)
+			(xy 0.201051 0.328051) (xy 0.172536 0.362032) (xy 0.150356 0.400449) (xy 0.135184 0.442134) (xy 0.127481 0.48582)
+			(xy 0.127 0.508) (xy -0.127 0.508) (xy -0.127 0.381) (xy -0.127481 0.35882) (xy -0.135184 0.315134)
+			(xy -0.150356 0.273449) (xy -0.172536 0.235032) (xy -0.201051 0.201051) (xy -0.235032 0.172536) (xy -0.273449 0.150356)
+			(xy -0.315134 0.135184) (xy -0.35882 0.127481) (xy -0.381 0.127) (xy -0.381 0) (xy -0.381 -0.127)
+			(xy -0.291389 -0.132457) (xy -0.225159 -0.146843) (xy -0.171849 -0.167183) (xy -0.125 -0.1905) (xy -0.07815 -0.213816)
+			(xy -0.02484 -0.234156) (xy 0.04139 -0.248542) (xy 0.127 -0.254) (xy 0.381 -0.254)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(fill yes)
+		(layer "F.Cu")
+		(uuid "6a1a6485-dbac-4f01-a978-1501fa4dfde9")
+	)
+	(fp_text user "${REFERENCE}"
+		(at 0 4 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(uuid "ddcfe552-e9af-4c49-8cf9-692150551da1")
+		(effects
+			(font
+				(size 1 1)
+			)
+		)
+	)
+	(pad "1" smd circle
+		(at -0.381 0)
+		(size 0.254 0.254)
+		(layers "F.Cu")
+		(uuid "fa49bb96-3560-4405-9189-356376ea38a9")
+	)
+	(pad "1" smd circle
+		(at 0 0.508)
+		(size 0.254 0.254)
+		(layers "F.Cu")
+		(uuid "262e7e58-87bd-488d-99c8-88fd743e4d47")
+	)
+	(pad "1" smd circle
+		(at 0.381 0)
+		(size 0.508 0.508)
+		(layers "F.Cu")
+		(uuid "f353b0a7-5e84-4212-8504-340754c51779")
+	)
+	(embedded_fonts no)
+)

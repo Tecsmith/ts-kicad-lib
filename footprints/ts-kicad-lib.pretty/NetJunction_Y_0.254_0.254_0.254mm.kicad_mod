@@ -1,0 +1,116 @@
+(footprint "NetJunction_Y_0.254_0.254_0.254mm"
+	(version 20260206)
+	(generator "pcbnew")
+	(generator_version "10.0")
+	(layer "F.Cu")
+	(property "Reference" "REF**"
+		(at 0 -2 0)
+		(unlocked yes)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "6e058c45-5e42-4fef-b696-caea7f6486c9")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.1)
+			)
+		)
+	)
+	(property "Value" "NetJunction_Y_0.254_0.254_0.254mm"
+		(at 0 6 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(uuid "7e021554-d091-4700-88b9-878954d31c6c")
+		(effects
+			(font
+				(size 1 1)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "470d3468-ecc0-4949-b811-aa400061c6d4")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "b33038d5-191d-4395-8fee-353ced5bf80c")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(attr through_hole)
+	(duplicate_pad_numbers_are_jumpers yes)
+	(fp_poly
+		(pts
+			(arc
+				(start 0.021785 0.201395)
+				(mid -0.060619 0.146335)
+				(end -0.15782 0.127)
+			)
+			(xy -0.381 0.127)
+			(arc
+				(start -0.381 -0.127)
+				(mid -0.201395 -0.201395)
+				(end -0.127 -0.381)
+			)
+			(xy 0.127 -0.381)
+			(arc
+				(start 0.127 -0.15782)
+				(mid 0.146335 -0.060618)
+				(end 0.201395 0.021785)
+			)
+		)
+		(stroke
+			(width 0)
+			(type solid)
+		)
+		(fill yes)
+		(layer "F.Cu")
+		(uuid "f73240f3-1c93-4b3c-afb7-7a325508fdd0")
+	)
+	(fp_text user "${REFERENCE}"
+		(at 0 4 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(uuid "75e19422-fac9-4fb9-b9aa-f4902ca4e093")
+		(effects
+			(font
+				(size 1 1)
+			)
+		)
+	)
+	(pad "1" smd circle
+		(at -0.381 0)
+		(size 0.254 0.254)
+		(layers "F.Cu")
+		(uuid "3c8d8a1e-8cb6-4ed2-8b5a-b82d72a903de")
+	)
+	(pad "1" smd circle
+		(at 0 -0.381)
+		(size 0.254 0.254)
+		(layers "F.Cu")
+		(uuid "cfbd877e-83a9-4dc5-9036-245743060464")
+	)
+	(pad "1" smd circle
+		(at 0.11159 0.11159)
+		(size 0.254 0.254)
+		(layers "F.Cu")
+		(uuid "589028ac-5204-4686-ba04-e5896c730418")
+	)
+	(embedded_fonts no)
+)

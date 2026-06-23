@@ -1,0 +1,120 @@
+(footprint "jlcpcb_order_number_5x5"
+	(version 20260206)
+	(generator "pcbnew")
+	(generator_version "10.0")
+	(layer "F.Cu")
+	(property "Reference" "REF**"
+		(at 0 -0.5 0)
+		(unlocked yes)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "9c7e8a83-55db-4f83-8285-5e1fcacffdc1")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.1)
+			)
+		)
+	)
+	(property "Value" "jlcpcb_order_number_5x5"
+		(at 0 1 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "e05e1752-b877-4a0b-bda3-dd8653ed781f")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "5b81ec80-07a4-4c0a-b892-d881c3fad5f6")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "840e0fdd-fc4a-4b65-8d1a-34fa4a139ef9")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(attr smd)
+	(duplicate_pad_numbers_are_jumpers no)
+	(fp_rect
+		(start -2.5 -2.5)
+		(end 2.5 2.5)
+		(stroke
+			(width 0.01)
+			(type solid)
+		)
+		(fill yes)
+		(layer "F.SilkS")
+		(uuid "67ba28e9-c8b7-464b-9ccf-6cf835eec80e")
+	)
+	(fp_text user "${REFERENCE}"
+		(at 0 4 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(uuid "2f23cc8c-42b4-4272-9003-66e6dd59793a")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(zone
+		(layer "F.Cu")
+		(uuid "5659b0c8-49fd-4e30-abde-b788850be74e")
+		(name "KO")
+		(hatch edge 0.5)
+		(connect_pads
+			(clearance 0)
+		)
+		(min_thickness 0.25)
+		(keepout
+			(tracks not_allowed)
+			(vias not_allowed)
+			(pads not_allowed)
+			(copperpour allowed)
+			(footprints not_allowed)
+		)
+		(placement
+			(enabled no)
+			(sheetname "")
+		)
+		(fill
+			(thermal_gap 0.5)
+			(thermal_bridge_width 0.5)
+			(island_removal_mode 0)
+		)
+		(polygon
+			(pts
+				(xy -3 -2.5) (xy -2.988573 -2.606283) (xy -2.938839 -2.739624) (xy -2.853553 -2.853553) (xy -2.739624 -2.938839)
+				(xy -2.606283 -2.988573) (xy -2.5 -3) (xy 2.5 -3) (xy 2.606283 -2.988573) (xy 2.739624 -2.938839)
+				(xy 2.853553 -2.853553) (xy 2.938839 -2.739624) (xy 2.988573 -2.606283) (xy 3 -2.5) (xy 3 2.5) (xy 2.988573 2.606283)
+				(xy 2.938839 2.739624) (xy 2.853553 2.853553) (xy 2.739624 2.938839) (xy 2.606283 2.988573) (xy 2.5 3)
+				(xy -2.5 3) (xy -2.606283 2.988573) (xy -2.739624 2.938839) (xy -2.853553 2.853553) (xy -2.938839 2.739624)
+				(xy -2.988573 2.606283) (xy -3 2.5)
+			)
+		)
+	)
+	(embedded_fonts no)
+)

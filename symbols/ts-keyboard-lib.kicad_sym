@@ -1044,7 +1044,7 @@
 		)
 		(embedded_fonts no)
 	)
-	(symbol "SK6812MINI-E"
+	(symbol "SK6803MINI-E"
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
@@ -1060,18 +1060,8 @@
 				)
 			)
 		)
-		(property "Value" ""
-			(at 0 0 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "ts-keyboard-lib:SK6812MINI-E"
-			(at 0 -6.604 0)
+		(property "Value" "SK6803MINI-E"
+			(at 0 -6.35 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(hide yes)
@@ -1081,7 +1071,18 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://github.com/Tecsmith/ts-kicad-lib/blob/main/docs/sk6812mini-e-C5149201.pdf"
+		(property "Footprint" "ts-keyboard-lib:SK6803MINI-E"
+			(at 0 -8.89 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
 			(at 0 -8.636 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1103,17 +1104,17 @@
 				)
 			)
 		)
-		(symbol "SK6812MINI-E_1_1"
+		(symbol "SK6803MINI-E_1_1"
 			(polyline
 				(pts
-					(xy -4.064 0.254) (xy -3.81 0) (xy -4.064 -0.254)
+					(xy -3.937 0) (xy -4.445 0.254) (xy -4.445 -0.254) (xy -3.937 0)
 				)
 				(stroke
 					(width 0)
-					(type default)
+					(type solid)
 				)
 				(fill
-					(type none)
+					(type outline)
 				)
 			)
 			(rectangle
@@ -1125,42 +1126,6 @@
 				)
 				(fill
 					(type background)
-				)
-			)
-			(polyline
-				(pts
-					(xy -0.254 3.302) (xy 0.254 3.302)
-				)
-				(stroke
-					(width 0)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
-			)
-			(polyline
-				(pts
-					(xy -0.254 -3.302) (xy 0.254 -3.302)
-				)
-				(stroke
-					(width 0)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
-			)
-			(polyline
-				(pts
-					(xy 0 3.556) (xy 0 3.048)
-				)
-				(stroke
-					(width 0)
-					(type default)
-				)
-				(fill
-					(type none)
 				)
 			)
 			(polyline
@@ -1261,7 +1226,214 @@
 			)
 			(polyline
 				(pts
-					(xy 3.81 0.254) (xy 4.064 0) (xy 3.81 -0.254)
+					(xy 4.572 0.254) (xy 4.572 -0.254) (xy 5.08 0) (xy 4.572 0.254)
+				)
+				(stroke
+					(width 0)
+					(type solid)
+				)
+				(fill
+					(type outline)
+				)
+			)
+			(text "SK"
+				(at -3.302 3.048 0)
+				(effects
+					(font
+						(size 0.6096 0.6096)
+					)
+					(justify left)
+				)
+			)
+			(text "6803"
+				(at -3.302 2.032 0)
+				(effects
+					(font
+						(size 0.6096 0.6096)
+					)
+					(justify left)
+				)
+			)
+			(text "MINI-E"
+				(at -3.302 1.27 0)
+				(effects
+					(font
+						(size 0.4572 0.4572)
+					)
+					(justify left)
+				)
+			)
+			(text "ARGB"
+				(at 1.4343 -3.1843 0)
+				(effects
+					(font
+						(size 0.3048 0.3048)
+					)
+					(justify left)
+				)
+			)
+			(pin power_in line
+				(at 0 -5.08 90)
+				(length 1.27)
+				(name "Gnd"
+					(effects
+						(font
+							(size 1.016 1.016)
+						)
+					)
+				)
+				(number "1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin input line
+				(at -5.08 0 0)
+				(length 1.27)
+				(name "In"
+					(effects
+						(font
+							(size 1.016 1.016)
+						)
+					)
+				)
+				(number "2"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin power_in line
+				(at 0 5.08 270)
+				(length 1.27)
+				(name "Vdd"
+					(effects
+						(font
+							(size 1.016 1.016)
+						)
+					)
+				)
+				(number "3"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin output line
+				(at 5.08 0 180)
+				(length 1.27)
+				(name "Out"
+					(effects
+						(font
+							(size 1.016 1.016)
+						)
+					)
+				)
+				(number "4"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+		)
+		(embedded_fonts no)
+	)
+	(symbol "SK6812MINI-E"
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(duplicate_pin_numbers_are_jumpers no)
+		(property "Reference" "W"
+			(at 1.27 5.08 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "SK6812MINI-E"
+			(at 0 -6.35 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "ts-keyboard-lib:SK6812MINI-E"
+			(at 0 -8.89 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0 -8.636 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(symbol "SK6812MINI-E_1_1"
+			(polyline
+				(pts
+					(xy -3.937 0) (xy -4.445 -0.254) (xy -4.445 0.254) (xy -3.937 0)
+				)
+				(stroke
+					(width 0)
+					(type solid)
+				)
+				(fill
+					(type outline)
+				)
+			)
+			(rectangle
+				(start -3.81 3.81)
+				(end 3.81 -3.81)
+				(stroke
+					(width 0)
+					(type solid)
+				)
+				(fill
+					(type background)
+				)
+			)
+			(polyline
+				(pts
+					(xy 1.524 -2.032) (xy 1.524 -2.286) (xy 1.778 -2.286)
 				)
 				(stroke
 					(width 0)
@@ -1269,6 +1441,102 @@
 				)
 				(fill
 					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 1.524 -2.54) (xy 1.524 -2.794) (xy 1.778 -2.794)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 1.524 -2.794) (xy 2.032 -2.286)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 2.032 -1.778) (xy 1.524 -2.286)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 2.794 -1.778) (xy 2.794 -1.27)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 2.794 -2.794) (xy 3.302 -2.794)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 2.794 -2.794) (xy 2.286 -1.778) (xy 3.302 -1.778) (xy 2.794 -2.794)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 2.794 -3.302) (xy 2.794 -2.794) (xy 2.286 -2.794)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 5.08 0) (xy 4.572 -0.254) (xy 4.572 0.254) (xy 5.08 0)
+				)
+				(stroke
+					(width 0)
+					(type solid)
+				)
+				(fill
+					(type outline)
 				)
 			)
 			(text "SK"
@@ -1290,7 +1558,7 @@
 				)
 			)
 			(text "MINI-E"
-				(at -3.302 1.016 0)
+				(at -3.302 1.27 0)
 				(effects
 					(font
 						(size 0.4572 0.4572)
