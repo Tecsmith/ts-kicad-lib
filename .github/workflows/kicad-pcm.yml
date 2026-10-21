@@ -7,7 +7,6 @@
 name: KiCAD PCM packaging
 on:  # yamllint disable-line rule:truthy
   release:
-    branches: [main]
     types:
       - published
   workflow_dispatch:
@@ -39,6 +38,9 @@ jobs:
           if [ -z "$tag" ]; then
             tag="0.0.0"
             upload_release=false
+          elif [ "${{ github.event_name }}" != "release" ]; then
+            # Build the tagged content that the release asset belongs to.
+            git checkout --quiet "$tag"
           fi
 
           echo "tag=$tag" >> "$GITHUB_OUTPUT"

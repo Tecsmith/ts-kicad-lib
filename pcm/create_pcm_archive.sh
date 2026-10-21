@@ -1,61 +1,67 @@
 #!/bin/sh
+# Original packaging workflow: (c) 2024 @Bouni (MIT License).
+set -eu
+cd "$(dirname "$0")/.."
 
-# heavily inspired by https://github.com/4ms/4ms-kicad-lib/blob/master/pcm/make_archive.sh
-# Original idea from https://github.com/Bouni/kicad-jlcpcb-tools
-# (c) 2024 @Bouni (MIT License)
+python3 - "$@" <<'PY'
+import hashlib
+import json
+import os
+from pathlib import Path
+import re
+import sys
+import tempfile
+from zipfile import ZipFile, ZIP_DEFLATED
 
-if [ -z "$1" ]; then
-  VERSION="test"
-else
-  VERSION="$1"
-fi
+version = sys.argv[1] if len(sys.argv) > 1 else "0.0.0"
+if not re.fullmatch(r"[A-Za-z0-9][A-Za-z0-9._+-]*", version):
+    sys.exit("Invalid version: use letters, numbers, dots, underscores, plus signs, or hyphens.")
 
-echo "Clean up old files"
-rm -f pcm/*.zip
-rm -rf pcm/archive
+metadata = json.loads(Path("pcm/metadata.template.json").read_text(encoding="utf-8"))
+metadata["versions"][0]["version"] = version
+package_id = metadata["identifier"].replace(".", "_")
+model_dir = "${KICAD10_3RD_PARTY}/3dmodels/" + package_id
+libraries = {path.stem for path in Path("footprints").glob("*.pretty")}
+destination = Path("pcm") / f"ts-kicad-lib-{version}.zip"
 
+with tempfile.TemporaryDirectory(prefix="ts-kicad-pcm-", dir="pcm") as temporary:
+    archive_path = Path(temporary) / destination.name
+    with ZipFile(archive_path, "w", ZIP_DEFLATED) as archive:
+        for directory in ("footprints", "symbols", "3dmodels"):
+            if not Path(directory).is_dir():
+                sys.exit(f"Missing content directory: {directory}")
+            for path in sorted(Path(directory).rglob("*")):
+                # KiCad editors leave git-ignored .bak files next to libraries.
+                if not path.is_file() or path.suffix == ".bak":
+                    continue
+                if path.suffix in (".kicad_mod", ".kicad_sym"):
+                    text = path.read_text(encoding="utf-8")
+                    text = text.replace("${TECSMITH_3DMODEL_DIR}", model_dir)
+                    # PCM adds this prefix to library nicknames by default.
+                    text = re.sub(
+                        r'(\(property "Footprint" ")([^":]+):',
+                        lambda match: match[1] + ("PCM_" if match[2] in libraries else "") + match[2] + ":",
+                        text,
+                    )
+                    archive.writestr(path.as_posix(), text)
+                else:
+                    archive.write(path, path.as_posix())
+        archive.write("pcm/icon.png", "resources/icon.png")
+        archive.writestr("metadata.json", json.dumps(metadata, indent=4) + "\n")
+        install_size = sum(info.file_size for info in archive.infolist())
+    archive_path.replace(destination)
 
-echo "Create folder structure for ZIP"
-mkdir -p pcm/archive/plugins
-mkdir -p pcm/archive/resources
-
-echo "Copy files to destination"
-cp VERSION pcm/archive/plugins
-cp -r footprints pcm/archive
-cp -r symbols pcm/archive
-cp -r 3dmodels pcm/archive
-# cp *.py pcm/archive/plugins
-# cp *.png pcm/archive/plugins
-# cp settings.json pcm/archive/plugins
-# cp -r icons pcm/archive/plugins
-# cp -r lib pcm/archive/plugins
-# mkdir pcm/archive/plugins/core
-# cp core/*.py pcm/archive/plugins/core
-cp pcm/icon.png pcm/archive/resources
-cp pcm/metadata.template.json pcm/archive/metadata.json
-
-echo "Write version info to file"
-echo $VERSION > pcm/archive/plugins/VERSION
-
-echo "Modify archive metadata.json"
-sed -i "s/VERSION_HERE/$VERSION/g" pcm/archive/metadata.json
-#sed -i "s/\"kicad_version\": \"6.0\",/\"kicad_version\": \"6.0\"/g" pcm/archive/metadata.json
-sed -i -E '/\"kicad_version\": \"[0-9]+\.[0-9]\",/ s/.$//g' pcm/archive/metadata.json
-sed -i "/SHA256_HERE/d" pcm/archive/metadata.json
-sed -i "/DOWNLOAD_SIZE_HERE/d" pcm/archive/metadata.json
-sed -i "/DOWNLOAD_URL_HERE/d" pcm/archive/metadata.json
-sed -i "/INSTALL_SIZE_HERE/d" pcm/archive/metadata.json
-
-echo "Zip PCM archive"
-cd pcm/archive
-zip -r ../ts-kicad-lib-$VERSION.zip .
-cd ../..
-
-echo "Gather data for repo rebuild"
-echo VERSION=$VERSION >> $GITHUB_ENV
-echo DOWNLOAD_SHA256=$(shasum --algorithm 256 pcm/ts-kicad-lib-$VERSION.zip | xargs | cut -d' ' -f1) >> $GITHUB_ENV
-echo DOWNLOAD_SIZE=$(ls -l pcm/ts-kicad-lib-$VERSION.zip | xargs | cut -d' ' -f5) >> $GITHUB_ENV
-echo DOWNLOAD_URL="https:\/\/github.com\/tecsmith\/ts-kicad-lib\/releases\/download\/$VERSION\/ts-kicad-lib-$VERSION.zip" >> $GITHUB_ENV
-echo INSTALL_SIZE=$(unzip -l pcm/ts-kicad-lib-$VERSION.zip | tail -1 | xargs | cut -d' ' -f1) >> $GITHUB_ENV
-echo KICAD_VERSION=$(grep -oP '(?<="kicad_version": ")[^"]*' pcm/metadata.template.json) >> $GITHUB_ENV
-echo PROJECT_NAME=$(grep name pcm/metadata.template.json | head -1 | grep -oP '(?<="name": ")[^"]*') >> $GITHUB_ENV
+values = {
+    "VERSION": version,
+    "DOWNLOAD_SHA256": hashlib.sha256(destination.read_bytes()).hexdigest(),
+    "DOWNLOAD_SIZE": destination.stat().st_size,
+    "DOWNLOAD_URL": f"https://github.com/tecsmith/ts-kicad-lib/releases/download/{version}/{destination.name}",
+    "INSTALL_SIZE": install_size,
+    "KICAD_VERSION": metadata["versions"][0]["kicad_version"],
+    "PROJECT_NAME": metadata["name"],
+}
+if os.environ.get("GITHUB_ENV"):
+    with open(os.environ["GITHUB_ENV"], "a", encoding="utf-8") as environment:
+        environment.writelines(f"{key}={value}\n" for key, value in values.items())
+print(f"Created {destination} ({values['DOWNLOAD_SIZE']} bytes)")
+PY

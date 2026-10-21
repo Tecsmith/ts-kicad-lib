@@ -1,7 +1,7 @@
 (footprint "JRAINBOW-5V-ARGB"
-	(version 20241229)
+	(version 20260206)
 	(generator "pcbnew")
-	(generator_version "9.0")
+	(generator_version "10.0")
 	(layer "F.Cu")
 	(descr "Through hole straight pin header, 1x04, 2.54mm pitch, single row")
 	(tags "Through hole pin header THT 1x04 2.54mm single row")
@@ -54,6 +54,7 @@
 		)
 	)
 	(attr through_hole)
+	(duplicate_pad_numbers_are_jumpers no)
 	(fp_line
 		(start -1.38 1.38)
 		(end -1.38 -1.38)

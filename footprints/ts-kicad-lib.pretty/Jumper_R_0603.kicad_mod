@@ -6,9 +6,9 @@
 	(descr "Resistor SMD 0603 (1608 Metric), square (rectangular) end terminal, IPC-7351 nominal, (Body size source: IPC-SM-782 page 72, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf)")
 	(tags "resistor")
 	(property "Reference" "REF**"
-		(at 0.825 -1.43 0)
+		(at 0.825 -2 0)
 		(layer "F.SilkS")
-		(uuid "2b2cd0bf-6f9c-4ac0-8497-c65f7bd814e9")
+		(uuid "ab38f115-fb4b-4a98-8517-12ecf0411092")
 		(effects
 			(font
 				(size 1 1)
@@ -19,7 +19,7 @@
 	(property "Value" "Jumper_R_0603"
 		(at 0.825 3.175 0)
 		(layer "F.Fab")
-		(uuid "36a24a33-4d1d-4ed3-b11d-060860e261cc")
+		(uuid "0fae62f4-873a-4813-b762-a375f21a536d")
 		(effects
 			(font
 				(size 1 1)
@@ -31,7 +31,7 @@
 		(at 0 0 0)
 		(layer "F.Fab")
 		(hide yes)
-		(uuid "22a699ef-5ae5-409c-9722-92e5562b7197")
+		(uuid "bde9288f-c657-4477-8063-0dff1ab49476")
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -42,7 +42,7 @@
 		(at 0 0 0)
 		(layer "F.Fab")
 		(hide yes)
-		(uuid "0445e9a0-c361-4e13-80a6-6642330f62cc")
+		(uuid "6cef6d56-2e59-46d9-a215-9b0704fa0d34")
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -53,7 +53,7 @@
 		(at 0 0 0)
 		(layer "F.SilkS")
 		(hide yes)
-		(uuid "74c480bb-08e5-4356-852c-d27b4dc68442")
+		(uuid "b3797877-5e5d-4ae5-9ed5-bbb5928ee59c")
 		(effects
 			(font
 				(size 1 1)
@@ -71,7 +71,7 @@
 			(type solid)
 		)
 		(layer "F.SilkS")
-		(uuid "b4b4455a-1386-43d3-98ab-e0c79f1e1ca9")
+		(uuid "38e58d71-f738-42ad-b24c-0d09bb7b4007")
 	)
 	(fp_line
 		(start 0.521566 1.115047)
@@ -81,7 +81,7 @@
 			(type solid)
 		)
 		(layer "F.SilkS")
-		(uuid "2d6d0807-fa42-4086-9248-d05efaf8fb47")
+		(uuid "58168eb3-9ffc-46bb-aab2-151bc62298fe")
 	)
 	(fp_line
 		(start 0.587742 -0.5225)
@@ -91,7 +91,7 @@
 			(type solid)
 		)
 		(layer "F.SilkS")
-		(uuid "0eea9b69-ccaa-48e2-b4bd-03def77064de")
+		(uuid "60017a33-73a0-4016-a33b-bc782204c5f3")
 	)
 	(fp_line
 		(start 0.587742 0.5225)
@@ -101,7 +101,7 @@
 			(type solid)
 		)
 		(layer "F.SilkS")
-		(uuid "d73cb8a4-28e1-4b0f-86f0-589c170bcc0c")
+		(uuid "a3d095fb-1f47-4f9c-9e05-d7a3c318db3a")
 	)
 	(fp_line
 		(start -0.722713 -0.223441)
@@ -111,7 +111,7 @@
 			(type solid)
 		)
 		(layer "F.CrtYd")
-		(uuid "e535db63-6ba2-47a1-955e-9c301da17f5c")
+		(uuid "d0bd4d32-7615-453b-8b75-8c8697dd41ff")
 	)
 	(fp_line
 		(start -0.222713 -0.723554)
@@ -121,7 +121,7 @@
 			(type solid)
 		)
 		(layer "F.CrtYd")
-		(uuid "565a2630-ed55-4fca-9b31-692c5bb7ed6b")
+		(uuid "6f346781-e3c1-43b1-988d-401058b3ee83")
 	)
 	(fp_line
 		(start 0.221702 2.298373)
@@ -131,7 +131,7 @@
 			(type solid)
 		)
 		(layer "F.CrtYd")
-		(uuid "fd40aac2-fe18-4ab6-a9db-8fbc1ec27b22")
+		(uuid "63b542c4-f4cd-4553-aea0-b585bce220fd")
 	)
 	(fp_line
 		(start 0.721752 1.222653)
@@ -141,7 +141,7 @@
 			(type solid)
 		)
 		(layer "F.CrtYd")
-		(uuid "87448926-f5b5-4600-b6e7-d7f1b4a96552")
+		(uuid "eb952948-8652-40d9-820d-a5cc42b36fb7")
 	)
 	(fp_line
 		(start 1.797914 0.722696)
@@ -151,7 +151,7 @@
 			(type solid)
 		)
 		(layer "F.CrtYd")
-		(uuid "a846dce1-09cd-450b-ab75-ae6bc486e27c")
+		(uuid "b53c6ad5-cdf2-4ccf-80a8-a70102e86a4a")
 	)
 	(fp_line
 		(start 2.297948 -0.223516)
@@ -161,7 +161,7 @@
 			(type solid)
 		)
 		(layer "F.CrtYd")
-		(uuid "f2fcb663-921b-4b3e-8b0d-1ddf71bffed5")
+		(uuid "f7091100-5794-4d80-9422-812ffd08c31f")
 	)
 	(fp_arc
 		(start -0.722713 -0.223441)
@@ -172,7 +172,7 @@
 			(type default)
 		)
 		(layer "F.CrtYd")
-		(uuid "6dc77202-441a-468e-9e0a-ed25a93e0ddb")
+		(uuid "7bd01d57-2def-4d43-9b19-0d7549fc36d8")
 	)
 	(fp_arc
 		(start -0.222255 2.298373)
@@ -183,7 +183,7 @@
 			(type default)
 		)
 		(layer "F.CrtYd")
-		(uuid "e2f7cee7-19c4-41e9-9ff3-5273ff445a4f")
+		(uuid "6b4c1bca-df1d-49e5-b995-2bf22c370de2")
 	)
 	(fp_arc
 		(start 0.721702 1.798416)
@@ -194,7 +194,7 @@
 			(type default)
 		)
 		(layer "F.CrtYd")
-		(uuid "2474e492-e3c2-4f9f-bee5-c07f6652d52e")
+		(uuid "672a7bcb-381b-4fce-8b21-0d19d8045d64")
 	)
 	(fp_arc
 		(start 0.721752 1.222653)
@@ -205,7 +205,7 @@
 			(type default)
 		)
 		(layer "F.CrtYd")
-		(uuid "fb252957-f536-48b7-9b1e-0a9daba0da19")
+		(uuid "df34a8a5-78aa-4ede-8378-0c20be36ec31")
 	)
 	(fp_arc
 		(start 1.797948 -0.723554)
@@ -216,7 +216,7 @@
 			(type default)
 		)
 		(layer "F.CrtYd")
-		(uuid "138bbdc5-a97c-4f7d-b54c-c19964a400ba")
+		(uuid "380441b7-9c9c-4f05-80d6-eea3c4d6a77b")
 	)
 	(fp_arc
 		(start 2.297914 0.222734)
@@ -227,7 +227,7 @@
 			(type default)
 		)
 		(layer "F.CrtYd")
-		(uuid "329fdb00-7a9f-4b04-8e1c-74adb6bce4fb")
+		(uuid "b55e5db8-b694-4e78-917b-f65bbeb738e7")
 	)
 	(fp_rect
 		(start -0.414429 0.073049)
@@ -238,7 +238,7 @@
 		)
 		(fill no)
 		(layer "F.Fab")
-		(uuid "761b6fd6-3cb5-4ee9-97ca-00f60e867186")
+		(uuid "77acda9e-5adb-4ef9-96ee-f7c679769224")
 	)
 	(fp_rect
 		(start 0.025 -0.4125)
@@ -249,7 +249,7 @@
 		)
 		(fill no)
 		(layer "F.Fab")
-		(uuid "86232c90-120a-4e85-9c98-8d90ea11d465")
+		(uuid "b087faac-cafb-44d9-8c64-137305636de5")
 	)
 	(fp_rect
 		(start -0.655 -0.73)
@@ -260,12 +260,12 @@
 		)
 		(fill no)
 		(layer "User.1")
-		(uuid "28a49d5b-e4cc-49ff-bf8c-67ceee709dd5")
+		(uuid "7d1741ef-a3ce-4676-8805-afff09d2c19c")
 	)
 	(fp_text user "${REFERENCE}"
 		(at 2.73 0 90)
 		(layer "F.Fab")
-		(uuid "00fbe7cd-4869-44a1-b3d9-a6012dd95c59")
+		(uuid "84abf926-4e57-4f6c-a14b-ae1641b0c752")
 		(effects
 			(font
 				(size 0.4 0.4)
@@ -278,21 +278,21 @@
 		(size 0.95 0.95)
 		(layers "F.Cu" "F.Mask" "F.Paste")
 		(roundrect_rratio 0.25)
-		(uuid "ab62b9d2-9156-403e-9271-429d9758a8b6")
+		(uuid "d6f40147-0dae-46f3-9b80-a8c09b9353eb")
 	)
 	(pad "2" smd roundrect
 		(at 1.65 0)
 		(size 0.8 0.95)
 		(layers "F.Cu" "F.Mask" "F.Paste")
 		(roundrect_rratio 0.25)
-		(uuid "ed194d54-0b0b-473d-baf5-bdd6efbe7eac")
+		(uuid "0ad04632-c360-49bb-b405-b5d4fd1a7c24")
 	)
 	(pad "3" smd roundrect
 		(at 0 1.65 90)
 		(size 0.8 0.95)
 		(layers "F.Cu" "F.Mask" "F.Paste")
 		(roundrect_rratio 0.25)
-		(uuid "f5085812-f97b-4d07-938a-3b6aa0cc9b8c")
+		(uuid "146334d9-75a2-4218-9b26-812f1b23e9ef")
 	)
 	(embedded_fonts no)
 	(model "${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0603_1608Metric.step"

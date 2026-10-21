@@ -8,7 +8,7 @@
 		(unlocked yes)
 		(layer "F.SilkS")
 		(hide yes)
-		(uuid "561c33a5-4391-4ddc-a8c5-5af4613588f4")
+		(uuid "aaf84746-d5c5-47de-bd08-ce62bf73b598")
 		(effects
 			(font
 				(size 1 1)
@@ -20,7 +20,7 @@
 		(at 0 6 0)
 		(unlocked yes)
 		(layer "F.Fab")
-		(uuid "25b902f0-beb9-427d-83b1-06f40349c8d0")
+		(uuid "6f018636-0728-4404-a686-3cde79c4a63a")
 		(effects
 			(font
 				(size 1 1)
@@ -32,7 +32,7 @@
 		(unlocked yes)
 		(layer "F.Fab")
 		(hide yes)
-		(uuid "ca5b0535-2816-4c34-b0e5-f935d5d4422e")
+		(uuid "3ad82cef-2625-41b0-a2b8-1ff2cae64bf9")
 		(effects
 			(font
 				(size 1 1)
@@ -45,7 +45,7 @@
 		(unlocked yes)
 		(layer "F.Fab")
 		(hide yes)
-		(uuid "6c435fc3-8c12-4e94-8e65-bf2e892dc1fe")
+		(uuid "62fb7236-4bf4-4c6c-8c4f-910d4ae39f34")
 		(effects
 			(font
 				(size 1 1)
@@ -53,7 +53,7 @@
 			)
 		)
 	)
-	(attr through_hole)
+	(attr smd exclude_from_pos_files exclude_from_bom dnp)
 	(duplicate_pad_numbers_are_jumpers yes)
 	(fp_poly
 		(pts
@@ -72,13 +72,13 @@
 		)
 		(fill yes)
 		(layer "F.Cu")
-		(uuid "4fa9f16b-2bd9-4330-a5ca-8bf51bc9932a")
+		(uuid "ee9c4bb1-0fac-4730-b8b8-e2a4fbe9b002")
 	)
 	(fp_text user "${REFERENCE}"
 		(at 0 4 0)
 		(unlocked yes)
 		(layer "F.Fab")
-		(uuid "1f4d2c10-728f-4b94-bfb2-d3a04575fbfe")
+		(uuid "1f2299f7-8088-4695-9ba8-9a1576b0d42e")
 		(effects
 			(font
 				(size 1 1)
@@ -89,19 +89,19 @@
 		(at -0.762 0)
 		(size 0.508 0.508)
 		(layers "F.Cu")
-		(uuid "eb78174a-fd38-49f0-861e-13e9ee522b1e")
+		(uuid "4a780d81-230b-4380-b71b-1fa7f38c8f04")
 	)
 	(pad "1" smd circle
 		(at 0 0.762)
 		(size 0.508 0.508)
 		(layers "F.Cu")
-		(uuid "e417136e-2dc1-490d-acb2-dfd1450765b4")
+		(uuid "714c92eb-aebc-4fd2-ad8d-6505bdd696ea")
 	)
 	(pad "1" smd circle
 		(at 0.508 0)
 		(size 0.254 0.254)
 		(layers "F.Cu")
-		(uuid "975f3a8b-cc71-44ce-83c4-fa28e0b1a484")
+		(uuid "927eb26f-07b9-4caf-9275-4857d39addc5")
 	)
 	(embedded_fonts no)
 )

@@ -207,7 +207,7 @@
 		(uuid "2efbe0f9-fc1e-405a-8292-11ec5e9167e1")
 	)
 	(embedded_fonts no)
-	(model "${KICAD9_3RD_PARTY}/3dmodels/com_github_sparkfun_SparkFun-KiCad-Libraries/Battery.3dshapes/XH414H-IV01E.step"
+	(model "${KICAD10_3RD_PARTY}/3dmodels/com_github_sparkfun_SparkFun-KiCad-Libraries/Battery.3dshapes/XH414H-IV01E.step"
 		(offset
 			(xyz 0 0 0.3)
 		)
